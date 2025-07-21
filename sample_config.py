@@ -45,7 +45,7 @@ class Config(object):
     DELETE_ALL_CMD = os.environ.get("DELETE_ALL_CMDD", "delall")
     CONNECT_COMMAND = os.environ.get("CONNECT_COMMANDD", "connect")
     DISCONNECT_COMMAND = os.environ.get("DISCONNECT_COMMANDD", "disconnect")
-    UPDATE_CHANNEL = int(os.environ.get("UPDATE_CHANNEL", "0"))
+    UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", "0")
 
 
    # To record start time of bot
