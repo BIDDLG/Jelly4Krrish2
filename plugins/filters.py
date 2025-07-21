@@ -318,7 +318,7 @@ async def give_filter(client, message):
 
     txt = None
     for keyword in reversed(sorted(keywords, key=len)):
-        pattern = "( |^|[^\w])" + re.escape(keyword) + "( |$|[^\w])"
+        pattern = r"( |^|[^\w])" + re.escape(keyword) + r"( |$|[^\w])"
         if re.search(pattern, name, flags=re.IGNORECASE):
             reply_text, btn, alert, fileid = await find_filter(
                 "filters", keyword)
