@@ -363,7 +363,7 @@ async def give_filter(client, message):
                     InlineKeyboardButton(
                         "📤 Click Here To Download 📤",
                         url=
-                        f'https://{Config.MOVIE_WEBSITE}/search?q={message.text.replace(" ", "%20")}+'
+                        f'https://{Config.MOVIE_WEBSITE}'
                     )
                 ],
                 [
